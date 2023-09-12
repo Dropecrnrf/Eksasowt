@@ -7532,19 +7532,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Pedro.crnrf\\.nuget\\packages\\": {}
+    "C:\\Users\\Lelouch\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Pedro.crnrf\\Documents\\GitHub\\Eksasowt\\Eksasowt\\Eksasowt\\Eksasowt.csproj",
+      "projectUniqueName": "C:\\Users\\Lelouch\\Documents\\GitHub\\Eksasowt\\Eksasowt\\Eksasowt\\Eksasowt.csproj",
       "projectName": "Eksasowt",
-      "projectPath": "C:\\Users\\Pedro.crnrf\\Documents\\GitHub\\Eksasowt\\Eksasowt\\Eksasowt\\Eksasowt.csproj",
-      "packagesPath": "C:\\Users\\Pedro.crnrf\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Pedro.crnrf\\Documents\\GitHub\\Eksasowt\\Eksasowt\\Eksasowt\\obj\\",
+      "projectPath": "C:\\Users\\Lelouch\\Documents\\GitHub\\Eksasowt\\Eksasowt\\Eksasowt\\Eksasowt.csproj",
+      "packagesPath": "C:\\Users\\Lelouch\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Lelouch\\Documents\\GitHub\\Eksasowt\\Eksasowt\\Eksasowt\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Pedro.crnrf\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Lelouch\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

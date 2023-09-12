@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Profile>Reach</Profile>
+  <Platform>Windows</Platform>
+  <Config />
+  <SourceFiles>
+    <File>C:/Users/Lelouch/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Droite1.png</File>
+    <File>C:/Users/Lelouch/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Droite2.png</File>
+    <File>C:/Users/Lelouch/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Droite3.png</File>
+    <File>C:/Users/Lelouch/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Droite4.png</File>
+    <File>C:/Users/Lelouch/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Droite5.png</File>
+    <File>C:/Users/Lelouch/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Droite6.png</File>
+    <File>C:/Users/Lelouch/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Droite7.png</File>
+    <File>C:/Users/Lelouch/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Droite8.png</File>
+    <File>C:/Users/Lelouch/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Gauche1.png</File>
+    <File>C:/Users/Lelouch/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Gauche2.png</File>
+    <File>C:/Users/Lelouch/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Gauche3.png</File>
+    <File>C:/Users/Lelouch/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Gauche4.png</File>
+    <File>C:/Users/Lelouch/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Gauche5.png</File>
+    <File>C:/Users/Lelouch/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Gauche6.png</File>
+    <File>C:/Users/Lelouch/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Gauche7.png</File>
+    <File>C:/Users/Lelouch/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Gauche8.png</File>
+    <File>C:/Users/Lelouch/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Saut.png</File>
+    <File>C:/Users/Lelouch/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Saut2.png</File>
+    <File>C:/Users/Lelouch/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Saut3.png</File>
+    <File>C:/Users/Lelouch/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/SautCharge.png</File>
+    <File>C:/Users/Lelouch/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/static.png</File>
+  </SourceFiles>
+  <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+  </DestFiles>
+</SourceFileCollection>
