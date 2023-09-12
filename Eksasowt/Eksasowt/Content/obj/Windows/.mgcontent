@@ -4,39 +4,57 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/Lelouch/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/../../../../../../Downloads/Desert.png</File>
-    <File>C:/Users/Lelouch/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/../../../../../../Downloads/rocher.png</File>
-    <File>C:/Users/Lelouch/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Desert2.png</File>
-    <File>C:/Users/Lelouch/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Droite1.png</File>
-    <File>C:/Users/Lelouch/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Droite2.png</File>
-    <File>C:/Users/Lelouch/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Droite3.png</File>
-    <File>C:/Users/Lelouch/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Droite4.png</File>
-    <File>C:/Users/Lelouch/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Droite5.png</File>
-    <File>C:/Users/Lelouch/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Droite6.png</File>
-    <File>C:/Users/Lelouch/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Droite7.png</File>
-    <File>C:/Users/Lelouch/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Droite8.png</File>
-    <File>C:/Users/Lelouch/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Espace.png</File>
-    <File>C:/Users/Lelouch/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Espace1.png</File>
-    <File>C:/Users/Lelouch/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Espace2.png</File>
-    <File>C:/Users/Lelouch/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Gauche1.png</File>
-    <File>C:/Users/Lelouch/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Gauche2.png</File>
-    <File>C:/Users/Lelouch/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Gauche3.png</File>
-    <File>C:/Users/Lelouch/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Gauche4.png</File>
-    <File>C:/Users/Lelouch/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Gauche5.png</File>
-    <File>C:/Users/Lelouch/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Gauche6.png</File>
-    <File>C:/Users/Lelouch/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Gauche7.png</File>
-    <File>C:/Users/Lelouch/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Gauche8.png</File>
-    <File>C:/Users/Lelouch/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Montagne1.png</File>
-    <File>C:/Users/Lelouch/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Montagne2.png</File>
-    <File>C:/Users/Lelouch/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Saut.png</File>
-    <File>C:/Users/Lelouch/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Saut2.png</File>
-    <File>C:/Users/Lelouch/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Saut3.png</File>
-    <File>C:/Users/Lelouch/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/SautCharge.png</File>
-    <File>C:/Users/Lelouch/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/static.png</File>
+    <File>C:/Users/Pedro.crnrf/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Desert1.png</File>
+    <File>C:/Users/Pedro.crnrf/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Desert2.png</File>
+    <File>C:/Users/Pedro.crnrf/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Droite1.png</File>
+    <File>C:/Users/Pedro.crnrf/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Droite2.png</File>
+    <File>C:/Users/Pedro.crnrf/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Droite3.png</File>
+    <File>C:/Users/Pedro.crnrf/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Droite4.png</File>
+    <File>C:/Users/Pedro.crnrf/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Droite5.png</File>
+    <File>C:/Users/Pedro.crnrf/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Droite6.png</File>
+    <File>C:/Users/Pedro.crnrf/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Droite7.png</File>
+    <File>C:/Users/Pedro.crnrf/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Droite8.png</File>
+    <File>C:/Users/Pedro.crnrf/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Egout1.png</File>
+    <File>C:/Users/Pedro.crnrf/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Egout2.png</File>
+    <File>C:/Users/Pedro.crnrf/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Espace1.png</File>
+    <File>C:/Users/Pedro.crnrf/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Espace2.png</File>
+    <File>C:/Users/Pedro.crnrf/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Futur1.png</File>
+    <File>C:/Users/Pedro.crnrf/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Future2.png</File>
+    <File>C:/Users/Pedro.crnrf/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Gauche1.png</File>
+    <File>C:/Users/Pedro.crnrf/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Gauche2.png</File>
+    <File>C:/Users/Pedro.crnrf/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Gauche3.png</File>
+    <File>C:/Users/Pedro.crnrf/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Gauche4.png</File>
+    <File>C:/Users/Pedro.crnrf/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Gauche5.png</File>
+    <File>C:/Users/Pedro.crnrf/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Gauche6.png</File>
+    <File>C:/Users/Pedro.crnrf/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Gauche7.png</File>
+    <File>C:/Users/Pedro.crnrf/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Gauche8.png</File>
+    <File>C:/Users/Pedro.crnrf/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Lave1.png</File>
+    <File>C:/Users/Pedro.crnrf/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Lave2.png</File>
+    <File>C:/Users/Pedro.crnrf/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Montagne1.png</File>
+    <File>C:/Users/Pedro.crnrf/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Montagne2.png</File>
+    <File>C:/Users/Pedro.crnrf/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/rocher.png</File>
+    <File>C:/Users/Pedro.crnrf/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Saut.png</File>
+    <File>C:/Users/Pedro.crnrf/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Saut2.png</File>
+    <File>C:/Users/Pedro.crnrf/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Saut3.png</File>
+    <File>C:/Users/Pedro.crnrf/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/SautCharge.png</File>
+    <File>C:/Users/Pedro.crnrf/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/SousTerre1.png</File>
+    <File>C:/Users/Pedro.crnrf/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/SousTerre2.png</File>
+    <File>C:/Users/Pedro.crnrf/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/static.png</File>
+    <File>C:/Users/Pedro.crnrf/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Terre1.png</File>
+    <File>C:/Users/Pedro.crnrf/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/Terre2.png</File>
   </SourceFiles>
   <DestFiles>
-    <File>Desert.png</File>
-    <File>rocher.png</File>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

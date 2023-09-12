@@ -38,12 +38,29 @@ namespace Eksasowt
             _spriteBatch = new SpriteBatch(GraphicsDevice);
             List<Texture2D> backgroundTextures = new List<Texture2D>
             {
-                Content.Load<Texture2D>("Desert"),
-                Content.Load<Texture2D>("Desert2"),
-                Content.Load<Texture2D>("Espace1"),
-                Content.Load<Texture2D>("Espace2"),
+                Content.Load<Texture2D>("Lave1"),
+                Content.Load<Texture2D>("Lave2"),
+
+                Content.Load<Texture2D>("SousTerre1"),
+                Content.Load<Texture2D>("SousTerre2"),
+
+                Content.Load<Texture2D>("Egout1"),
+                Content.Load<Texture2D>("Egout2"),
+
+                Content.Load<Texture2D>("Terre1"),
+                Content.Load<Texture2D>("Terre2"),
+
                 Content.Load<Texture2D>("Montagne1"),
                 Content.Load<Texture2D>("Montagne2"),
+
+                Content.Load<Texture2D>("Desert1"),
+                Content.Load<Texture2D>("Desert2"),
+
+                Content.Load<Texture2D>("Espace1"),
+                Content.Load<Texture2D>("Espace2"),
+
+                Content.Load<Texture2D>("Futur1"),
+                Content.Load<Texture2D>("Future2"),
                 // Ajoutez d'autres textures de fond ici
             };
 
