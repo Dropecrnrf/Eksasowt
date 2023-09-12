@@ -1,6 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using System.Collections.Generic;
 
 namespace Eksasowt
 {
@@ -8,6 +9,12 @@ namespace Eksasowt
     {
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
+        private Player _player;
+        private int screenWidth;
+        private int screenHeight;
+        private List<Texture2D> walkLeftFrames;
+        private List<Texture2D> walkRightFrames;
+        private List<Texture2D> jumpFrames; // Liste des textures pour l'animation de saut
 
         public Game1()
         {
@@ -19,7 +26,8 @@ namespace Eksasowt
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
-
+            screenWidth = GraphicsDevice.Viewport.Width;
+            screenHeight = GraphicsDevice.Viewport.Height;
             base.Initialize();
         }
 
@@ -27,7 +35,39 @@ namespace Eksasowt
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            // TODO: use this.Content to load your game content here
+            // Charger les textures pour l'animation de saut
+            jumpFrames = new List<Texture2D>
+            {
+                Content.Load<Texture2D>("Saut"),
+                Content.Load<Texture2D>("Saut2"),
+                Content.Load<Texture2D>("Saut3"),
+            };
+
+            walkLeftFrames = new List<Texture2D>
+            {
+                Content.Load<Texture2D>("gauche1"),
+                Content.Load<Texture2D>("gauche2"),
+                Content.Load<Texture2D>("gauche3"),
+                Content.Load<Texture2D>("gauche4"),
+                Content.Load<Texture2D>("gauche5"),
+                Content.Load<Texture2D>("gauche6"),
+                Content.Load<Texture2D>("gauche7"),
+                Content.Load<Texture2D>("gauche8"),
+            };
+
+            walkRightFrames = new List<Texture2D>
+            {
+                Content.Load<Texture2D>("droite1"),
+                Content.Load<Texture2D>("droite2"),
+                Content.Load<Texture2D>("droite3"),
+                Content.Load<Texture2D>("droite4"),
+                Content.Load<Texture2D>("droite5"),
+                Content.Load<Texture2D>("droite6"),
+                Content.Load<Texture2D>("droite7"),
+                Content.Load<Texture2D>("droite8"),
+            };
+
+            _player = new Player(Content.Load<Texture2D>("static"), jumpFrames, screenWidth, screenHeight, walkLeftFrames, walkRightFrames);
         }
 
         protected override void Update(GameTime gameTime)
@@ -35,7 +75,7 @@ namespace Eksasowt
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
 
-            // TODO: Add your update logic here
+            _player.Update(gameTime, GraphicsDevice.Viewport.Width, GraphicsDevice.Viewport.Height);
 
             base.Update(gameTime);
         }
@@ -44,7 +84,12 @@ namespace Eksasowt
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
-            // TODO: Add your drawing code here
+            _spriteBatch.Begin();
+
+            // Dessin du joueur
+            _player.Draw(_spriteBatch);
+
+            _spriteBatch.End();
 
             base.Draw(gameTime);
         }
