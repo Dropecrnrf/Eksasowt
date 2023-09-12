@@ -20,14 +20,21 @@ namespace Eksasowt
         private float _jumpTimer;
         private float _verticalVelocity = 0; // Vitesse verticale du joueur
 
+        private List<Texture2D> _jumpFrames; // Liste des textures pour l'animation de saut
+        private bool _isAnimatingJump;
+        private int _currentJumpFrame;
+        private float _jumpFrameTimer;
+        private float _jumpFrameInterval = 0.1f; // Intervalle entre chaque image d'animation de saut
+
         private PlayerAnimation _walkLeftAnimation;
         private PlayerAnimation _walkRightAnimation;
         private bool _isWalkingLeft;
         private bool _isWalkingRight;
 
-        public Player(Texture2D texture, int screenWidth, int screenHeight, List<Texture2D> walkLeftFrames, List<Texture2D> walkRightFrames)
+        public Player(Texture2D texture, List<Texture2D> jumpFrames, int screenWidth, int screenHeight, List<Texture2D> walkLeftFrames, List<Texture2D> walkRightFrames)
         {
             _texture = texture;
+            _jumpFrames = jumpFrames;
             _position = new Vector2((screenWidth - _texture.Width) / 2, screenHeight - _texture.Height);
 
             _walkLeftAnimation = new PlayerAnimation(walkLeftFrames, 8); // 8 frames pour la marche à gauche
@@ -56,6 +63,7 @@ namespace Eksasowt
                 {
                     // Commencez le saut normal
                     _isJumping = true;
+                    _isAnimatingJump = true; // Commencez l'animation de saut
                     _jumpTimer = 0f;
                     _verticalVelocity = -_jumpSpeed;
                 }
@@ -68,6 +76,12 @@ namespace Eksasowt
             else
             {
                 _isJumping = false;
+            }
+
+            // Arrêtez l'animation de saut lorsque le saut est terminé
+            if (!_isJumping)
+            {
+                _isAnimatingJump = false;
             }
 
             // Mise à jour de la position horizontale
@@ -97,11 +111,28 @@ namespace Eksasowt
             {
                 _walkRightAnimation.Update(gameTime);
             }
+
+            // Mise à jour de l'animation de saut
+            if (_isAnimatingJump)
+            {
+                _jumpFrameTimer += (float)gameTime.ElapsedGameTime.TotalSeconds;
+
+                if (_jumpFrameTimer >= _jumpFrameInterval)
+                {
+                    _currentJumpFrame = (_currentJumpFrame + 1) % _jumpFrames.Count;
+                    _jumpFrameTimer = 0f;
+                }
+            }
         }
 
         public void Draw(SpriteBatch spriteBatch)
         {
-            if (_isWalkingLeft)
+            if (_isAnimatingJump)
+            {
+                // Dessinez l'animation de saut si elle est active
+                spriteBatch.Draw(_jumpFrames[_currentJumpFrame], _position, Color.White);
+            }
+            else if (_isWalkingLeft)
             {
                 spriteBatch.Draw(_walkLeftAnimation.GetCurrentFrame(), _position, Color.White);
             }

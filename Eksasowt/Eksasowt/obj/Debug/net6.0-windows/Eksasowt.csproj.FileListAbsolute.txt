@@ -54,3 +54,5 @@ C:\Users\Lelouch\Documents\GitHub\Eksasowt\Eksasowt\Eksasowt\obj\Debug\net6.0-wi
 C:\Users\Lelouch\Documents\GitHub\Eksasowt\Eksasowt\Eksasowt\obj\Debug\net6.0-windows\Eksasowt.pdb
 C:\Users\Lelouch\Documents\GitHub\Eksasowt\Eksasowt\Eksasowt\obj\Debug\net6.0-windows\Eksasowt.genruntimeconfig.cache
 C:\Users\Lelouch\Documents\GitHub\Eksasowt\Eksasowt\Eksasowt\obj\Debug\net6.0-windows\ref\Eksasowt.dll
+C:\Users\Lelouch\Documents\GitHub\Eksasowt\Eksasowt\Eksasowt\bin\Debug\net6.0-windows\Content\Saut2.xnb
+C:\Users\Lelouch\Documents\GitHub\Eksasowt\Eksasowt\Eksasowt\bin\Debug\net6.0-windows\Content\Saut3.xnb

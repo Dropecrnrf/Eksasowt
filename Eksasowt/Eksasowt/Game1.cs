@@ -14,6 +14,7 @@ namespace Eksasowt
         private int screenHeight;
         private List<Texture2D> walkLeftFrames;
         private List<Texture2D> walkRightFrames;
+        private List<Texture2D> jumpFrames; // Liste des textures pour l'animation de saut
 
         public Game1()
         {
@@ -33,6 +34,15 @@ namespace Eksasowt
         protected override void LoadContent()
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
+
+            // Charger les textures pour l'animation de saut
+            jumpFrames = new List<Texture2D>
+            {
+                Content.Load<Texture2D>("Saut"),
+                Content.Load<Texture2D>("Saut2"),
+                Content.Load<Texture2D>("Saut3"),
+            };
+
             walkLeftFrames = new List<Texture2D>
             {
                 Content.Load<Texture2D>("gauche1"),
@@ -57,7 +67,7 @@ namespace Eksasowt
                 Content.Load<Texture2D>("droite8"),
             };
 
-            _player = new Player(Content.Load<Texture2D>("static"), screenWidth, screenHeight, walkLeftFrames, walkRightFrames);
+            _player = new Player(Content.Load<Texture2D>("static"), jumpFrames, screenWidth, screenHeight, walkLeftFrames, walkRightFrames);
         }
 
         protected override void Update(GameTime gameTime)
