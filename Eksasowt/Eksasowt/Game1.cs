@@ -15,6 +15,8 @@ namespace Eksasowt
         private List<Texture2D> walkLeftFrames;
         private List<Texture2D> walkRightFrames;
         private List<Texture2D> jumpFrames; // Liste des textures pour l'animation de saut
+        private Background background;
+
 
         public Game1()
         {
@@ -34,6 +36,14 @@ namespace Eksasowt
         protected override void LoadContent()
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
+            List<Texture2D> backgroundTextures = new List<Texture2D>
+            {
+                Content.Load<Texture2D>("Desert"),
+                Content.Load<Texture2D>("Espace"),
+                // Ajoutez d'autres textures de fond ici
+            };
+
+            background = new Background(backgroundTextures, screenWidth, screenHeight);
 
             // Charger les textures pour l'animation de saut
             jumpFrames = new List<Texture2D>
@@ -75,6 +85,9 @@ namespace Eksasowt
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
 
+            // Mettez à jour le fond d'écran
+            background.Update();
+
             _player.Update(gameTime, GraphicsDevice.Viewport.Width, GraphicsDevice.Viewport.Height);
 
             base.Update(gameTime);
@@ -85,6 +98,9 @@ namespace Eksasowt
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             _spriteBatch.Begin();
+
+            // Dessin du fond d'écran
+            background.Draw(_spriteBatch);
 
             // Dessin du joueur
             _player.Draw(_spriteBatch);
