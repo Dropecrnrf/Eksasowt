@@ -7,15 +7,14 @@ namespace Eksasowt
 {
     public class Player
     {
-        private Texture2D _texture;
-        private Vector2 _position;
+        public Texture2D _texture;
+        public Vector2 _position;
         private int _speed = 200;
         private float _jumpSpeed = 500; // Vitesse du saut normal
         private float _superJumpSpeed = 700; // Vitesse du super saut
         private float _gravity = 1000; // Force de gravité
         private bool _isJumping;
         private bool _isSuperJumping;
-        private float _jumpTime = 0.3f; // Durée du saut normal
         private float _superJumpTime = 0.5f; // Durée du super saut
         private float _jumpTimer;
         private float _verticalVelocity = 0; // Vitesse verticale du joueur
