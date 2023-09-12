@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>C:/Users/Pedro.crnrf/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/b918860d89d6ce3139dc89f8a3843aa6.png</SourceFile>
-  <SourceTime>2023-09-05T15:57:47.3352689+02:00</SourceTime>
-  <DestFile>C:/Users/Pedro.crnrf/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/bin/Windows/Content/rocher.xnb</DestFile>
-  <DestTime>2023-09-12T13:13:51.5912854+02:00</DestTime>
+  <SourceFile>C:/Users/Lelouch/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/../../../../../../Downloads/rocher.png</SourceFile>
+  <SourceTime>2023-09-12T13:43:50.4938177+02:00</SourceTime>
+  <DestFile>C:/Users/Lelouch/Documents/GitHub/Eksasowt/Eksasowt/Eksasowt/Content/bin/Windows/Content/rocher.xnb</DestFile>
+  <DestTime>2023-09-12T13:44:20.5906097+02:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2022-07-26T13:44:56+02:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

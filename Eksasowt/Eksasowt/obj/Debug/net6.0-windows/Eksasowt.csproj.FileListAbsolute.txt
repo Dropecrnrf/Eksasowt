@@ -117,3 +117,11 @@ C:\Users\Pedro.crnrf\Documents\GitHub\Eksasowt\Eksasowt\Eksasowt\obj\Debug\net6.
 C:\Users\Pedro.crnrf\Documents\GitHub\Eksasowt\Eksasowt\Eksasowt\bin\Debug\net6.0-windows\Content\Desert.xnb
 C:\Users\Pedro.crnrf\Documents\GitHub\Eksasowt\Eksasowt\Eksasowt\bin\Debug\net6.0-windows\Content\Espace.xnb
 C:\Users\Pedro.crnrf\Documents\GitHub\Eksasowt\Eksasowt\Eksasowt\bin\Debug\net6.0-windows\Content\rocher.xnb
+C:\Users\Lelouch\Documents\GitHub\Eksasowt\Eksasowt\Eksasowt\bin\Debug\net6.0-windows\Content\Desert.xnb
+C:\Users\Lelouch\Documents\GitHub\Eksasowt\Eksasowt\Eksasowt\bin\Debug\net6.0-windows\Content\Espace.xnb
+C:\Users\Lelouch\Documents\GitHub\Eksasowt\Eksasowt\Eksasowt\bin\Debug\net6.0-windows\Content\rocher.xnb
+C:\Users\Lelouch\Documents\GitHub\Eksasowt\Eksasowt\Eksasowt\bin\Debug\net6.0-windows\Content\Desert2.xnb
+C:\Users\Lelouch\Documents\GitHub\Eksasowt\Eksasowt\Eksasowt\bin\Debug\net6.0-windows\Content\Espace1.xnb
+C:\Users\Lelouch\Documents\GitHub\Eksasowt\Eksasowt\Eksasowt\bin\Debug\net6.0-windows\Content\Espace2.xnb
+C:\Users\Lelouch\Documents\GitHub\Eksasowt\Eksasowt\Eksasowt\bin\Debug\net6.0-windows\Content\Montagne1.xnb
+C:\Users\Lelouch\Documents\GitHub\Eksasowt\Eksasowt\Eksasowt\bin\Debug\net6.0-windows\Content\Montagne2.xnb

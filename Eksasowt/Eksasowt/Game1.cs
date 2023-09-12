@@ -14,9 +14,9 @@ namespace Eksasowt
         private int screenHeight;
         private List<Texture2D> walkLeftFrames;
         private List<Texture2D> walkRightFrames;
-        private List<Texture2D> jumpFrames; // Liste des textures pour l'animation de saut
+        private List<Texture2D> jumpFrames;
         private Background background;
-
+        private List<Object> platforms;
 
         public Game1()
         {
@@ -27,9 +27,9 @@ namespace Eksasowt
 
         protected override void Initialize()
         {
-            // TODO: Add your initialization logic here
             screenWidth = GraphicsDevice.Viewport.Width;
             screenHeight = GraphicsDevice.Viewport.Height;
+            InitializePlatforms();
             base.Initialize();
         }
 
@@ -39,13 +39,16 @@ namespace Eksasowt
             List<Texture2D> backgroundTextures = new List<Texture2D>
             {
                 Content.Load<Texture2D>("Desert"),
-                Content.Load<Texture2D>("Espace"),
+                Content.Load<Texture2D>("Desert2"),
+                Content.Load<Texture2D>("Espace1"),
+                Content.Load<Texture2D>("Espace2"),
+                Content.Load<Texture2D>("Montagne1"),
+                Content.Load<Texture2D>("Montagne2"),
                 // Ajoutez d'autres textures de fond ici
             };
 
             background = new Background(backgroundTextures, screenWidth, screenHeight);
 
-            // Charger les textures pour l'animation de saut
             jumpFrames = new List<Texture2D>
             {
                 Content.Load<Texture2D>("Saut"),
@@ -80,13 +83,29 @@ namespace Eksasowt
             _player = new Player(Content.Load<Texture2D>("static"), jumpFrames, screenWidth, screenHeight, walkLeftFrames, walkRightFrames);
         }
 
+        private void InitializePlatforms()
+        {
+            platforms = new List<Object>
+            {
+                new Object(new Vector2(0, screenHeight - 30), Content.Load<Texture2D>("rocher"), "Platform"),
+                new Object(new Vector2(200, screenHeight - 100), Content.Load<Texture2D>("rocher"), "Platform"),
+                // Ajoutez d'autres plateformes ici
+            };
+        }
+
         protected override void Update(GameTime gameTime)
         {
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
 
-            // Mettez à jour le fond d'écran
             background.Update();
+
+            if (_player._position.Y <= 0)
+            {
+                background.StartTransition();
+                InitializePlatforms();
+                _player._position.Y = screenHeight - _player._texture.Height;
+            }
 
             _player.Update(gameTime, GraphicsDevice.Viewport.Width, GraphicsDevice.Viewport.Height);
 
@@ -99,10 +118,13 @@ namespace Eksasowt
 
             _spriteBatch.Begin();
 
-            // Dessin du fond d'écran
             background.Draw(_spriteBatch);
 
-            // Dessin du joueur
+            foreach (var platform in platforms)
+            {
+                platform.Draw(_spriteBatch);
+            }
+
             _player.Draw(_spriteBatch);
 
             _spriteBatch.End();
