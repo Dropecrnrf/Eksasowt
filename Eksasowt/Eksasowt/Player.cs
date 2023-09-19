@@ -2,36 +2,46 @@
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System.Collections.Generic;
-
+/*
+ *Auteurs : Pedro Carneiro & Achraf Zamader
+ *Classe : IFDAP4C
+ *Date :
+ *Fichier : Player.cs
+ */
 namespace Eksasowt
 {
     public class Player
     {
-        public Texture2D _texture;
-        public Vector2 _position;
-        private int _speed = 200;
+        // Déclaration des champs pour les caractéristiques du joueur
+        public Texture2D _texture; // Texture du joueur
+        public Vector2 _position; // Position du joueur sur l'écran
+        private int _speed = 200; // Vitesse de déplacement horizontale
         private float _jumpSpeed = 500; // Vitesse du saut normal
         private float _superJumpSpeed = 700; // Vitesse du super saut
         private float _gravity = 1000; // Force de gravité
-        private bool _isJumping;
-        private bool _isSuperJumping;
+        private bool _isJumping; // Indique si le joueur est en train de sauter
+        private bool _isSuperJumping; // Indique si le joueur est en train de faire un super saut
         private float _superJumpTime = 0.5f; // Durée du super saut
-        private float _jumpTimer;
+        private float _jumpTimer; // Compteur de temps de saut
         private float _verticalVelocity = 0; // Vitesse verticale du joueur
 
-        private List<Texture2D> _jumpFrames; // Liste des textures pour l'animation de saut
-        private bool _isAnimatingJump;
-        private int _currentJumpFrame;
+        // Liste des textures pour l'animation de saut
+        private List<Texture2D> _jumpFrames;
+        private bool _isAnimatingJump; // Indique si l'animation de saut est en cours
+        private int _currentJumpFrame; // Index de la frame d'animation de saut en cours
         private float _jumpFrameTimer;
         private float _jumpFrameInterval = 0.1f; // Intervalle entre chaque image d'animation de saut
 
+        // Animations de marche à gauche et à droite
         private PlayerAnimation _walkLeftAnimation;
         private PlayerAnimation _walkRightAnimation;
-        private bool _isWalkingLeft;
-        private bool _isWalkingRight;
+        private bool _isWalkingLeft; // Indique si le joueur se déplace vers la gauche
+        private bool _isWalkingRight; // Indique si le joueur se déplace vers la droite
 
+        // Constructeur
         public Player(Texture2D texture, List<Texture2D> jumpFrames, int screenWidth, int screenHeight, List<Texture2D> walkLeftFrames, List<Texture2D> walkRightFrames)
         {
+            // Initialisations
             _texture = texture;
             _jumpFrames = jumpFrames;
             _position = new Vector2((screenWidth - _texture.Width) / 2, screenHeight - _texture.Height);
@@ -102,6 +112,7 @@ namespace Eksasowt
                 _isWalkingRight = false;
             }
 
+            // Mise à jour des animations de marche
             if (_isWalkingLeft)
             {
                 _walkLeftAnimation.Update(gameTime);
